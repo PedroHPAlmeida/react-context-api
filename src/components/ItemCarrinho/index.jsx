@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Botao from "@/components/Botao";
 import Quantidade from "@/components/Quantidade";
 import ValorFormatado from "@/components/ValorFormatado";
@@ -6,9 +6,7 @@ import InfoItemCarrinho from "./InfoItemCarrinho";
 
 const ItemCarrinho = ({
   itemCarrinho,
-  removerProdutoCarrinho,
   adicionarProduto,
-  removerProduto,
 }) => {
   return (
     <li key={itemCarrinho.id}>
